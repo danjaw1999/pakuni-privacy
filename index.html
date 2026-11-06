@@ -3,297 +3,220 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pakuni Privacy Policy</title>
-<meta name="description" content="Privacy policy for the Pakuni app (iOS and Android) in Polish, English, German and Spanish.">
+<title>Pakuni · Privacy</title>
+<meta name="description" content="How the Pakuni parcel game handles your data, in Polish, English, German and Spanish, plus its published odds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
-  :root { --bg: #14161b; --surface: #1d2027; --line: #2c3038; --text: #f2efe6; --muted: #9a9c98; --accent: #f2b531; }
+  :root { --kraft: #e7cfa4; --kraft-dark: #c89b62; --paper: #fffdf8; --ink: #2e3a5c; --muted: #5c6684; --coral: #d2654d; --line: #e3dccb; --gold: #e8b44a; }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; }
-  nav { position: sticky; top: 0; z-index: 1; background: rgba(20, 22, 27, 0.95); border-bottom: 1px solid var(--line); }
-  nav div { max-width: 760px; margin: 0 auto; padding: 10px 16px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-  nav strong { margin-right: auto; font-size: 15px; }
-  nav a { color: var(--text); text-decoration: none; font-size: 14px; font-weight: 600; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; }
-  nav a:hover, nav a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
-  main { max-width: 760px; margin: 0 auto; padding: 8px 16px 64px; }
-  section { padding-top: 24px; scroll-margin-top: 64px; }
-  section + section { border-top: 1px solid var(--line); margin-top: 40px; }
-  h1 { font-size: 28px; line-height: 1.25; margin: 16px 0 4px; }
-  h2 { font-size: 19px; margin: 28px 0 8px; color: var(--accent); }
-  p, li { color: var(--text); }
-  .meta { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
-  .box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; }
-  ul { padding-left: 20px; }
-  a { color: var(--accent); overflow-wrap: anywhere; }
-  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
-  th, td { text-align: left; padding: 8px; border-bottom: 1px solid var(--line); }
-  footer { color: var(--muted); font-size: 13px; text-align: center; padding: 0 16px 32px; }
+  body { margin: 0; background: var(--kraft); background-image: radial-gradient(rgba(120,80,30,.08) 1px, transparent 1px); background-size: 6px 6px; color: var(--ink); font: 16px/1.6 "Fredoka", ui-rounded, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-text-size-adjust: 100%; }
+  .stamps { max-width: 820px; margin: 0 auto; padding: 20px 16px 4px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .stamps strong { font-size: 22px; margin-right: auto; letter-spacing: .5px; }
+  .stamps a { display: inline-block; background: var(--paper); color: var(--ink); text-decoration: none; font-weight: 600; font-size: 14px; padding: 8px 12px; border: 3px dotted var(--kraft-dark); outline: 4px solid var(--paper); }
+  .stamps a:hover, .stamps a:focus-visible { color: var(--coral); }
+  main { max-width: 820px; margin: 0 auto; padding: 12px 16px 48px; display: grid; gap: 28px; }
+  .label { background: var(--paper); border-radius: 6px; box-shadow: 0 6px 0 rgba(90,60,20,.18); overflow: hidden; scroll-margin-top: 12px; }
+  .airmail { height: 10px; background: repeating-linear-gradient(-45deg, var(--coral) 0 14px, var(--paper) 14px 20px, var(--ink) 20px 34px, var(--paper) 34px 40px); }
+  .label-head { display: flex; gap: 16px; align-items: center; padding: 18px 20px 8px; }
+  .label-head > div:first-child { flex: 1; min-width: 0; }
+  .kicker { margin: 0; color: var(--coral); font-weight: 600; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; }
+  .title { margin: 2px 0 0; font-size: 26px; line-height: 1.2; font-weight: 600; }
+  .meta { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+  .postmark { flex: none; width: 84px; height: 84px; border: 2px dashed var(--coral); border-radius: 50%; display: grid; place-items: center; text-align: center; color: var(--coral); font-weight: 700; font-size: 11px; line-height: 1.25; transform: rotate(-12deg); }
+  .addr { display: grid; grid-template-columns: 1fr 1fr; border-top: 1.5px dashed var(--line); border-bottom: 1.5px dashed var(--line); margin: 8px 20px 0; }
+  .addr div { padding: 10px 0; }
+  .addr div + div { border-left: 1.5px dashed var(--line); padding-left: 14px; }
+  .addr b { display: block; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); }
+  .lead { margin: 14px 20px 0; padding: 12px 14px; background: #fff1dc; border-left: 4px solid var(--gold); }
+  .cells { display: grid; grid-template-columns: 1fr 1fr; gap: 0; padding: 8px 20px 20px; }
+  .cells.one { grid-template-columns: 1fr; }
+  .cell { padding: 12px 0 4px; border-top: 1.5px dashed var(--line); }
+  .cells:not(.one) .cell:nth-child(odd) { padding-right: 14px; }
+  .cells:not(.one) .cell:nth-child(even) { padding-left: 14px; border-left: 1.5px dashed var(--line); }
+  .cell h3 { margin: 0 0 4px; font-size: 15px; font-weight: 600; display: flex; gap: 8px; align-items: center; }
+  .cell h3 span { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 4px; background: var(--ink); color: #fff; font-size: 12px; flex: none; }
+  .cell p, .cell li { margin: 0 0 8px; font-size: 15px; }
+  .cell ul { padding-left: 18px; margin: 0 0 8px; }
+  a { color: var(--coral); overflow-wrap: anywhere; }
+  table { width: 100%; border-collapse: collapse; margin: 4px 0 12px; font-size: 15px; }
+  th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  footer { text-align: center; color: #6f5430; font-size: 13px; padding: 0 16px 32px; }
+  @media (max-width: 620px) {
+    .cells { grid-template-columns: 1fr; }
+    .cells:not(.one) .cell:nth-child(n) { padding-left: 0; padding-right: 0; border-left: 0; }
+    .addr { grid-template-columns: 1fr; }
+    .addr div + div { border-left: 0; border-top: 1.5px dashed var(--line); padding-left: 0; }
+    .title { font-size: 22px; }
+    .postmark { width: 68px; height: 68px; font-size: 10px; }
+  }
 </style>
 </head>
 <body>
-<nav aria-label="Language">
-  <div>
-    <strong>Pakuni</strong>
-    <a href="#pl" hreflang="pl" lang="pl">Polski</a>
-    <a href="#en" hreflang="en" lang="en">English</a>
-    <a href="#de" hreflang="de" lang="de">Deutsch</a>
-    <a href="#es" hreflang="es" lang="es">Español</a>
-    <a href="#odds">Odds</a>
-  </div>
+<nav class="stamps" aria-label="Language">
+  <strong>Pakuni</strong>
+  <a href="#pl" hreflang="pl" lang="pl">Polski</a>
+  <a href="#en" hreflang="en" lang="en">English</a>
+  <a href="#de" hreflang="de" lang="de">Deutsch</a>
+  <a href="#es" hreflang="es" lang="es">Español</a>
+  <a href="#odds">Odds</a>
 </nav>
 <main>
 
-<section id="pl" lang="pl">
-  <h1>Polityka prywatności</h1>
-  <p class="meta">Pakuni (iOS i Android) · obowiązuje od 4 listopada 2026</p>
-  <div class="box">
-    <p>W skrócie: gra działa bez konta i bez internetu. Twoje postępy, ustawienia i statystyki zostają na urządzeniu. Nie mamy własnego serwera. Dane potrzebne do reklam przetwarza Google (AdMob), a zakupy obsługują Apple i Google.</p>
+<section class="label" id="pl" lang="pl">
+  <div class="airmail" aria-hidden="true"></div>
+  <header class="label-head">
+    <div>
+      <p class="kicker">Pakuni</p>
+      <h1 class="title">Prywatność w Pakuni</h1>
+      <p class="meta">iOS · Android · obowiązuje od 6 listopada 2026</p>
+    </div>
+    <div class="postmark" aria-hidden="true">PAKUNI<br>06·11·2026</div>
+  </header>
+  <div class="addr">
+    <div><b>Nadawca</b>JaworIT Daniel Jaworski, administrator danych · <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a></div>
+    <div><b>Odbiorca</b>Ty, gracz Pakuni na iOS lub Androidzie</div>
   </div>
-
-  <h2>Kto odpowiada za aplikację</h2>
-  <p>Aplikację Pakuni tworzy JaworIT Daniel Jaworski (administrator danych). Kontakt: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
-
-  <h2>Dane na Twoim urządzeniu</h2>
-  <p>Aplikacja zapisuje lokalnie, w pamięci telefonu: kolekcję (Pakuny, duplikaty, złote wersje), Znaczki, liczniki paczek czasowych i taśmę sortowniczą, liczniki gwarancji rzadkości, kalendarz, serię i zadania dnia, rangę Poczmistrza, układ Ulicy, ustawienia (język, dźwięk, wibracje, ograniczenie ruchu), stan przypomnienia, liczniki reklam (żeby pilnować limitów), liczbę uruchomień (żeby nie polecać naszych innych gier podczas pierwszej sesji) oraz informację, czy kupiłeś Premium. Te dane nie są wysyłane do nas ani nikomu innemu. Usuniesz je, czyszcząc dane aplikacji lub ją odinstalowując.</p>
-  <p>Nie zakładasz konta, nie podajesz imienia ani adresu e-mail. Aplikacja nie używa narzędzi analitycznych ani do raportowania awarii.</p>
-
-  <h2>Reklamy (Google AdMob)</h2>
-  <p>Wersja darmowa pokazuje baner na Ulicy, w Albumie i w Katalogu (nigdy podczas otwierania paczki) oraz reklamy z nagrodą, które uruchamiasz sam, z limitem dziennym. Paczki z reklam zawierają losową figurkę z wybranego miasta; szanse widzisz przed obejrzeniem. Reklamy dostarcza Google przez Google Mobile Ads SDK. Gdy reklama jest pobierana, SDK może zbierać i przesyłać do Google:</p>
-  <ul>
-    <li>identyfikatory urządzenia, np. identyfikator reklamowy (IDFA na iOS, za Twoją zgodą; identyfikator reklamowy Androida) i identyfikator zestawu aplikacji,</li>
-    <li>adres IP i przybliżoną lokalizację wyliczoną z adresu IP,</li>
-    <li>informacje o interakcjach z reklamami (np. wyświetlenia, kliknięcia, uruchomienia aplikacji),</li>
-    <li>dane diagnostyczne i o wydajności (np. czas uruchomienia, awarie SDK).</li>
-  </ul>
-  <p>Google używa tych danych do wyświetlania i mierzenia reklam, analityki oraz zapobiegania oszustwom. Dane są szyfrowane w trakcie przesyłania. Szczegóły: <a href="https://policies.google.com/technologies/partner-sites">Jak Google wykorzystuje informacje z aplikacji partnerów</a> i <a href="https://policies.google.com/privacy">Polityka prywatności Google</a>.</p>
-
-  <h2>Zgoda na reklamy (RODO)</h2>
-  <p>W Europejskim Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii przed pierwszą reklamą aplikacja pokazuje formularz zgody Google (UMP). Możesz zgodzić się na reklamy spersonalizowane, odmówić lub wybrać szczegółowe opcje. Bez zgody reklamy nie są personalizowane. Decyzję zmienisz w każdej chwili w Ustawieniach → „Prywatność reklam”. Podstawą przetwarzania jest Twoja zgoda (art. 6 ust. 1 lit. a RODO) lub, w zakresie reklam niespersonalizowanych i zapobiegania oszustwom, prawnie uzasadniony interes.</p>
-
-  <h2>Śledzenie na iOS (ATT)</h2>
-  <p>Na iPhonie i iPadzie system zapyta, czy aplikacja może śledzić Twoją aktywność. Tylko jeśli się zgodzisz, Google otrzyma identyfikator reklamowy IDFA. Gra działa tak samo bez tej zgody. Zmienisz to w Ustawieniach systemu → Prywatność i ochrona → Śledzenie. Na Androidzie identyfikator reklamowy zresetujesz lub usuniesz w ustawieniach systemu.</p>
-
-  <h2>Powiadomienia</h2>
-  <p>Jeśli się zgodzisz, gra wysyła najwyżej jedno lokalne powiadomienie dziennie, tylko gdy paczka czasowa jest naprawdę gotowa, i nigdy między 21:00 a 9:00. Planuje je telefon. Nie korzystamy z powiadomień push ani serwera, nie tworzymy tokenu powiadomień. Wyłączysz je w ustawieniach gry lub systemu.</p>
-
-  <h2>Linki do naszych innych gier</h2>
-  <p>W Ustawieniach aplikacja pokazuje inne gry JaworIT, oznaczone „Od JaworIT”. To nie jest reklama firm trzecich: lista jest wbudowana w aplikację, nic nie jest w tym celu pobierane i nie zapisujemy, czy ją widzisz lub klikasz. Dotknięcie otwiera stronę gry w App Store lub Google Play, gdzie obowiązują zasady prywatności Apple lub Google.</p>
-
-  <h2>Udostępnianie</h2>
-  <p>Swoją Ulicę możesz wysłać jako pocztówkę (obrazek). Korzystasz wtedy z systemowego menu udostępniania telefonu: to Ty wybierasz, gdzie to wysłać. Nic nie trafia do nas, a aplikacja nie prosi o dostęp do zdjęć.</p>
-
-  <h2>Zakupy w aplikacji</h2>
-  <p>Jednorazowy zakup „Premium” obsługuje Apple (App Store) lub Google (Google Play). Nie widzimy Twoich danych płatniczych. Aplikacja otrzymuje tylko informację, czy zakup jest aktywny, i zapisuje ją na urządzeniu. Obowiązują zasady prywatności Apple lub Google.</p>
-
-  <h2>Dzieci</h2>
-  <p>Aplikacja nie jest skierowana do dzieci poniżej 13 lat i świadomie nie zbiera ich danych. Jeśli uważasz, że dziecko przekazało nam dane, napisz do nas.</p>
-
-  <h2>Twoje prawa</h2>
-  <p>Nie przechowujemy Twoich danych na serwerach, więc nie mamy czego udostępnić ani usunąć. Dane w aplikacji usuniesz sam. W sprawie danych reklamowych możesz wycofać zgodę w aplikacji, zresetować identyfikator reklamowy lub skorzystać z narzędzi Google. Masz też prawo złożyć skargę do organu ochrony danych, w Polsce do Prezesa UODO.</p>
-
-  <h2>Zmiany</h2>
-  <p>Jeśli zmienimy tę politykę, opublikujemy nową wersję na tej stronie i zaktualizujemy datę obowiązywania. O istotnych zmianach poinformujemy w aplikacji lub w opisie aktualizacji.</p>
-
-  <h2>Kontakt</h2>
-  <p>Pytania dotyczące prywatności: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
+  <p class="lead">Pakuni nie ma kont, serwera ani analityki. Kolekcja i ustawienia leżą w pamięci telefonu. Poza telefon wychodzi tylko to, czego potrzebują reklamy Google (AdMob) oraz płatności Apple i Google.</p>
+  <div class="cells">
+    <div class="cell"><h3><span>1</span>Zostaje w telefonie</h3><p>Gra zapisuje lokalnie: Pakuny z duplikatami i złotymi wersjami, Znaczki, zegary paczek czasowych i taśmę sortowniczą, liczniki gwarancji rzadkości, kalendarz, serię i zadania dnia, rangę Poczmistrza, układ Ulicy, ustawienia (język, dźwięk, wibracje, ograniczenie ruchu, szybkie otwieranie), stan przypomnienia, liczniki reklam i uruchomień (do limitów) oraz informację, czy masz Premium.</p><p>Nic z tego nie trafia do nas ani do nikogo innego. Usuniesz to, czyszcząc dane aplikacji albo ją odinstalowując. Nie podajesz imienia ani e-maila.</p></div>
+    <div class="cell"><h3><span>2</span>Wychodzi z telefonu: reklamy</h3><p>Wersja bez Premium pokazuje mały baner w zakładkach Ulica, Album i Katalog (nigdy w trakcie otwierania paczki) oraz reklamy z nagrodą, które włączasz sam, z dziennym limitem. Dostarcza je Google przez Google Mobile Ads SDK, które przy pobieraniu reklamy może przesłać do Google:</p><ul><li>identyfikatory urządzenia: identyfikator reklamowy (IDFA na iOS tylko za Twoją zgodą, identyfikator reklamowy Androida) i identyfikator zestawu aplikacji,</li><li>adres IP i przybliżoną lokalizację z niego wyliczoną,</li><li>interakcje z reklamami (wyświetlenia, dotknięcia, uruchomienia aplikacji),</li><li>dane diagnostyczne i o wydajności SDK.</li></ul><p>Google używa ich do wyświetlania i mierzenia reklam, analityki i ochrony przed oszustwami; transmisja jest szyfrowana. Więcej: <a href="https://policies.google.com/technologies/partner-sites">jak Google korzysta z danych z aplikacji partnerów</a>, <a href="https://policies.google.com/privacy">polityka prywatności Google</a>.</p></div>
+    <div class="cell"><h3><span>3</span>Twoja decyzja o reklamach</h3><p>W EOG, Wielkiej Brytanii i Szwajcarii przed pierwszą reklamą pojawia się formularz zgody Google (UMP): możesz się zgodzić, odmówić albo wybrać szczegółowe opcje. Bez zgody reklamy nie są spersonalizowane. Zmienisz to w grze: Ustawienia (okienko poczty) → Usługi w okienku → Ustawienia prywatności reklam. Podstawa prawna: zgoda (art. 6 ust. 1 lit. a RODO), a dla reklam niespersonalizowanych i ochrony przed oszustwami prawnie uzasadniony interes.</p><p>Na iPhonie system zapyta też o śledzenie (ATT). IDFA trafia do Google tylko po Twojej zgodzie, a gra działa tak samo bez niej (Ustawienia systemu → Prywatność i ochrona → Śledzenie). Na Androidzie identyfikator reklamowy zresetujesz w ustawieniach systemu.</p></div>
+    <div class="cell"><h3><span>4</span>Awizo</h3><p>Jeśli się zgodzisz, telefon pokaże najwyżej jedno lokalne powiadomienie dziennie, tylko gdy paczka czasowa naprawdę czeka, i nigdy między 21:00 a 9:00. Planuje je sam telefon: bez usługi push, serwera i tokenu. Wyłączysz je na druku nadawczym w Ustawieniach albo w systemie.</p></div>
+    <div class="cell"><h3><span>5</span>Pocztówki</h3><p>Ulicę możesz wysłać jako pocztówkę (obrazek) przez systemowe menu udostępniania. To Ty wybierasz adresata; nic nie trafia do nas, a gra nie prosi o dostęp do zdjęć.</p></div>
+    <div class="cell"><h3><span>6</span>Klaser (Premium)</h3><p>Jednorazowy zakup „Premium” obsługuje Apple (App Store) albo Google (Google Play). Nie widzimy danych płatniczych; gra dostaje tylko informację, czy zakup jest aktywny, i zapisuje ją w telefonie. Do płatności stosuje się polityka prywatności Apple lub Google.</p></div>
+    <div class="cell"><h3><span>7</span>Dzieci</h3><p>Pakuni nie jest skierowane do dzieci poniżej 13 lat i świadomie nie zbiera ich danych. Jeśli dziecko przekazało nam dane, napisz do nas.</p></div>
+    <div class="cell"><h3><span>8</span>Twoje prawa</h3><p>Nie trzymamy Twoich danych na serwerze, więc nie mamy czego wydać ani skasować; dane w grze usuwasz sam. Zgodę na reklamy wycofasz w grze, identyfikator reklamowy zresetujesz w systemie, a z danymi u Google pomogą narzędzia Google. Możesz złożyć skargę do organu ochrony danych, w Polsce do Prezesa UODO.</p></div>
+    <div class="cell"><h3><span>9</span>Zmiany i kontakt</h3><p>Nową wersję tej strony opublikujemy tutaj i zmienimy datę u góry; o ważnych zmianach powiemy w grze lub w opisie aktualizacji. Pytania: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p></div>
+  </div>
 </section>
 
-<section id="en" lang="en">
-  <h1>Privacy Policy</h1>
-  <p class="meta">Pakuni (iOS and Android) · effective November 4, 2026</p>
-  <div class="box">
-    <p>In short: the game works without an account and without internet. Your progress, settings and statistics stay on your device. We run no server of our own. Data needed for ads is processed by Google (AdMob), and purchases are handled by Apple and Google.</p>
+<section class="label" id="en" lang="en">
+  <div class="airmail" aria-hidden="true"></div>
+  <header class="label-head">
+    <div>
+      <p class="kicker">Pakuni</p>
+      <h1 class="title">Privacy in Pakuni</h1>
+      <p class="meta">iOS · Android · effective 6 November 2026</p>
+    </div>
+    <div class="postmark" aria-hidden="true">PAKUNI<br>06·11·2026</div>
+  </header>
+  <div class="addr">
+    <div><b>From</b>JaworIT Daniel Jaworski, data controller · <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a></div>
+    <div><b>To</b>You, a Pakuni player on iOS or Android</div>
   </div>
-
-  <h2>Who is responsible</h2>
-  <p>Pakuni is made by JaworIT Daniel Jaworski (data controller). Contact: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
-
-  <h2>Data on your device</h2>
-  <p>The app stores the following locally on your device: your collection (Pakuns, duplicates, golden versions), stamps, timed-parcel clocks and the sorting belt, the rarity-guarantee counters, the calendar, streak and daily tasks, your Postmaster rank, your Street layout, settings (language, sound, haptics, reduced motion), the reminder state, ad counters (to enforce the limits), a launch counter (so we never suggest our other games during your first session) and whether you bought Premium. This data is not sent to us or anyone else. You can delete it by clearing the app's data or uninstalling it.</p>
-  <p>You do not create an account or give us your name or email address. The app uses no analytics or crash-reporting tools.</p>
-
-  <h2>Ads (Google AdMob)</h2>
-  <p>The free version shows a banner on the Street, in the Album and in the Catalogue (never while you open a parcel), and rewarded ads that you start yourself, with a daily limit. Parcels from ads hold a random figure from the city you chose; you see the odds before you watch. Ads are provided by Google through the Google Mobile Ads SDK. When an ad is loaded, the SDK may collect and send to Google:</p>
-  <ul>
-    <li>device identifiers, such as the advertising identifier (IDFA on iOS, only with your permission; Android advertising ID) and the app set ID,</li>
-    <li>IP address and approximate location derived from the IP address,</li>
-    <li>information about interactions with ads (for example views, taps, app launches),</li>
-    <li>diagnostic and performance data (for example launch time, SDK crashes).</li>
-  </ul>
-  <p>Google uses this data to show and measure ads, for analytics and to prevent fraud. The data is encrypted in transit. Details: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-
-  <h2>Ad consent (GDPR)</h2>
-  <p>In the European Economic Area, the UK and Switzerland, the app shows Google's consent form (UMP) before the first ad. You can accept personalized ads, decline, or choose detailed options. Without consent, ads are not personalized. You can change your choice at any time in Settings → "Ad privacy". The legal basis is your consent (Art. 6(1)(a) GDPR) or, for non-personalized ads and fraud prevention, legitimate interest.</p>
-
-  <h2>Tracking on iOS (ATT)</h2>
-  <p>On iPhone and iPad, the system asks whether the app may track your activity. Google receives the IDFA advertising identifier only if you allow it. The game works the same without this permission. You can change it in iOS Settings → Privacy &amp; Security → Tracking. On Android, you can reset or delete the advertising ID in the system settings.</p>
-
-  <h2>Notifications</h2>
-  <p>If you allow it, the game sends at most one local notification a day, only when a timed parcel is really ready, and never between 21:00 and 09:00. Your phone schedules it. We use no push service or server and create no notification token. Turn it off in the game or in system settings.</p>
-
-  <h2>Links to our other games</h2>
-  <p>In Settings, the app shows other games by JaworIT, marked "From JaworIT". This is not a third-party ad: the list is built into the app, nothing is downloaded for it, and we do not record whether you see or tap it. Tapping opens the game's page in the App Store or Google Play, where Apple's or Google's privacy policy applies.</p>
-
-  <h2>Sharing</h2>
-  <p>You can send your Street as a postcard (an image). This uses your phone's system share sheet: you choose where it goes. Nothing is sent to us, and the app does not ask for access to your photos.</p>
-
-  <h2>In-app purchases</h2>
-  <p>The one-time "Premium" purchase is processed by Apple (App Store) or Google (Google Play). We never see your payment details. The app only receives whether the purchase is active and stores that on your device. Apple's or Google's privacy policy applies to the payment.</p>
-
-  <h2>Children</h2>
-  <p>The app is not directed at children under 13 and does not knowingly collect their data. If you believe a child has provided us with data, please contact us.</p>
-
-  <h2>Your rights</h2>
-  <p>We do not store your data on any server, so there is nothing for us to export or delete. You can delete the data in the app yourself. For advertising data, you can withdraw consent in the app, reset your advertising ID or use Google's tools. You also have the right to lodge a complaint with a data protection authority.</p>
-
-  <h2>Changes</h2>
-  <p>If we change this policy, we will publish the new version on this page and update the effective date. We will point out significant changes in the app or in the update notes.</p>
-
-  <h2>Contact</h2>
-  <p>Privacy questions: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
+  <p class="lead">Pakuni has no accounts, no server and no analytics. Your collection and settings live in your phone's storage. The only things that leave the phone are what Google's ads (AdMob) and Apple's and Google's payments need.</p>
+  <div class="cells">
+    <div class="cell"><h3><span>1</span>Stays on your phone</h3><p>The game stores locally: your Pakuns with duplicates and golden versions, Stamps, the timed-parcel clocks and the sorting belt, the rarity-guarantee counters, the calendar, streak and daily tasks, your Postmaster rank, your Street layout, settings (language, sound, haptics, reduced motion, quick open), the reminder state, ad and launch counters (for the limits) and whether you own Premium.</p><p>None of it is sent to us or to anyone else. Clearing the app's data or uninstalling it deletes it. You never give us your name or email.</p></div>
+    <div class="cell"><h3><span>2</span>Leaves your phone: ads</h3><p>Without Premium the game shows a small banner on the Street, Album and Catalogue tabs (never while a parcel is being opened) and rewarded ads that you start yourself, with a daily limit. Google serves them through the Google Mobile Ads SDK, which may send Google the following when an ad loads:</p><ul><li>device identifiers: the advertising identifier (IDFA on iOS only with your permission; the Android advertising ID) and the app set ID,</li><li>your IP address and a rough location derived from it,</li><li>ad interactions (views, taps, app launches),</li><li>SDK diagnostics and performance data.</li></ul><p>Google uses this to show and measure ads, for analytics and to prevent fraud; it is encrypted in transit. More: <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a>, <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p></div>
+    <div class="cell"><h3><span>3</span>Your say on ads</h3><p>In the EEA, the UK and Switzerland, Google's consent form (UMP) appears before the first ad: accept, decline or pick detailed options. Without consent, ads are not personalised. Change it in the game: Settings (the post-office counter) → Counter services → Ad privacy options. Legal basis: consent (Art. 6(1)(a) GDPR), or legitimate interest for non-personalised ads and fraud prevention.</p><p>On iPhone the system also asks about tracking (ATT). Google receives the IDFA only if you allow it, and the game works the same if you don't (iOS Settings → Privacy &amp; Security → Tracking). On Android you can reset the advertising ID in system settings.</p></div>
+    <div class="cell"><h3><span>4</span>Notices</h3><p>If you allow it, your phone shows at most one local notification a day, only when a timed parcel is really waiting, and never between 21:00 and 09:00. The phone schedules it itself: no push service, no server, no token. Untick it on the parcel slip in Settings or turn it off in system settings.</p></div>
+    <div class="cell"><h3><span>5</span>Postcards</h3><p>You can send your Street as a postcard (an image) through the system share sheet. You pick the recipient; nothing reaches us, and the game never asks for access to your photos.</p></div>
+    <div class="cell"><h3><span>6</span>The stamp book (Premium)</h3><p>The one-time "Premium" purchase is handled by Apple (App Store) or Google (Google Play). We never see payment details; the game only learns whether the purchase is active and keeps that on your phone. Apple's or Google's privacy policy covers the payment.</p></div>
+    <div class="cell"><h3><span>7</span>Children</h3><p>Pakuni is not directed at children under 13 and does not knowingly collect their data. If a child has given us data, please write to us.</p></div>
+    <div class="cell"><h3><span>8</span>Your rights</h3><p>We keep none of your data on a server, so there is nothing for us to hand over or erase; you delete the in-game data yourself. Withdraw ad consent in the game, reset your advertising ID in the system, and use Google's tools for data held by Google. You may complain to a data protection authority.</p></div>
+    <div class="cell"><h3><span>9</span>Changes and contact</h3><p>A new version of this page will be published here with a new date at the top; important changes will be mentioned in the game or the update notes. Questions: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p></div>
+  </div>
 </section>
 
-<section id="de" lang="de">
-  <h1>Datenschutzerklärung</h1>
-  <p class="meta">Pakuni (iOS und Android) · gültig ab 4. November 2026</p>
-  <div class="box">
-    <p>Kurz gesagt: Das Spiel funktioniert ohne Konto und ohne Internet. Dein Fortschritt, deine Einstellungen und Statistiken bleiben auf deinem Gerät. Wir betreiben keinen eigenen Server. Daten für Werbung verarbeitet Google (AdMob), Käufe wickeln Apple und Google ab.</p>
+<section class="label" id="de" lang="de">
+  <div class="airmail" aria-hidden="true"></div>
+  <header class="label-head">
+    <div>
+      <p class="kicker">Pakuni</p>
+      <h1 class="title">Datenschutz in Pakuni</h1>
+      <p class="meta">iOS · Android · gültig ab 6. November 2026</p>
+    </div>
+    <div class="postmark" aria-hidden="true">PAKUNI<br>06·11·2026</div>
+  </header>
+  <div class="addr">
+    <div><b>Absender</b>JaworIT Daniel Jaworski, Verantwortlicher · <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a></div>
+    <div><b>Empfänger</b>Du, wer Pakuni auf iOS oder Android spielt</div>
   </div>
-
-  <h2>Verantwortlich</h2>
-  <p>Pakuni wird von JaworIT Daniel Jaworski erstellt (Verantwortlicher). Kontakt: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
-
-  <h2>Daten auf deinem Gerät</h2>
-  <p>Die App speichert lokal auf deinem Gerät: deine Sammlung (Pakuns, Doppelte, goldene Versionen), Briefmarken, die Uhren der Zeitpakete und das Sortierband, die Zähler der Seltenheitsgarantie, Kalender, Serie und Tagesaufgaben, deinen Postmeister-Rang, die Einrichtung deiner Straße, Einstellungen (Sprache, Ton, Vibration, reduzierte Bewegung), den Erinnerungsstatus, Werbezähler (für die Limits), einen Startzähler (damit wir in deiner ersten Sitzung keine anderen Spiele empfehlen) und ob du Premium gekauft hast. Diese Daten werden weder an uns noch an andere gesendet. Du löschst sie, indem du die App-Daten löschst oder die App deinstallierst.</p>
-  <p>Du legst kein Konto an und gibst weder Namen noch E-Mail-Adresse an. Die App nutzt keine Analyse- oder Absturzberichts-Tools.</p>
-
-  <h2>Werbung (Google AdMob)</h2>
-  <p>Die kostenlose Version zeigt ein Banner auf der Straße, im Album und im Katalog (nie beim Öffnen eines Pakets) und Werbung mit Belohnung, die du selbst startest, mit Tageslimit. Pakete aus Werbung enthalten eine zufällige Figur aus der gewählten Stadt; die Chancen siehst du vor dem Ansehen. Die Werbung liefert Google über das Google Mobile Ads SDK. Beim Laden einer Anzeige kann das SDK folgende Daten erfassen und an Google senden:</p>
-  <ul>
-    <li>Gerätekennungen, z. B. die Werbe-ID (IDFA auf iOS nur mit deiner Erlaubnis; Android-Werbe-ID) und die App-Set-ID,</li>
-    <li>IP-Adresse und daraus abgeleiteter ungefährer Standort,</li>
-    <li>Informationen zu Interaktionen mit Anzeigen (z. B. Aufrufe, Tippen, App-Starts),</li>
-    <li>Diagnose- und Leistungsdaten (z. B. Startzeit, Abstürze des SDK).</li>
-  </ul>
-  <p>Google nutzt diese Daten, um Anzeigen auszuliefern und zu messen, für Analysen und zur Betrugsvermeidung. Die Übertragung ist verschlüsselt. Details: <a href="https://policies.google.com/technologies/partner-sites">Wie Google Daten von Websites und Apps von Partnern verwendet</a> und die <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</p>
-
-  <h2>Einwilligung zu Werbung (DSGVO)</h2>
-  <p>Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz zeigt die App vor der ersten Anzeige das Einwilligungsformular von Google (UMP). Du kannst personalisierte Werbung erlauben, ablehnen oder Einstellungen im Detail wählen. Ohne Einwilligung wird keine personalisierte Werbung gezeigt. Deine Wahl änderst du jederzeit unter Einstellungen → „Werbe-Datenschutz“. Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) bzw. für nicht personalisierte Werbung und Betrugsvermeidung das berechtigte Interesse.</p>
-
-  <h2>Tracking auf iOS (ATT)</h2>
-  <p>Auf iPhone und iPad fragt das System, ob die App deine Aktivitäten erfassen darf. Nur wenn du zustimmst, erhält Google die Werbe-ID IDFA. Das Spiel funktioniert ohne diese Erlaubnis genauso. Ändern kannst du das in den iOS-Einstellungen → Datenschutz &amp; Sicherheit → Tracking. Auf Android setzt du die Werbe-ID in den Systemeinstellungen zurück oder löschst sie.</p>
-
-  <h2>Benachrichtigungen</h2>
-  <p>Wenn du zustimmst, schickt das Spiel höchstens eine lokale Benachrichtigung am Tag, nur wenn ein Zeitpaket wirklich bereit ist, und nie zwischen 21 und 9 Uhr. Dein Telefon plant sie selbst. Wir nutzen keinen Push-Dienst und keinen Server und erzeugen kein Benachrichtigungs-Token. Abschalten kannst du sie im Spiel oder in den Systemeinstellungen.</p>
-
-  <h2>Links zu unseren anderen Spielen</h2>
-  <p>In den Einstellungen zeigt die App andere Spiele von JaworIT, gekennzeichnet mit „Von JaworIT“. Das ist keine Werbung Dritter: Die Liste ist in die App eingebaut, dafür wird nichts geladen, und wir erfassen nicht, ob du sie siehst oder antippst. Ein Tippen öffnet die Seite des Spiels im App Store oder bei Google Play; dort gilt die Datenschutzerklärung von Apple bzw. Google.</p>
-
-  <h2>Teilen</h2>
-  <p>Deine Straße kannst du als Postkarte (Bild) verschicken. Dafür nutzt du das Teilen-Menü deines Telefons: Du entscheidest, wohin es geht. Nichts davon geht an uns, und die App fragt nicht nach Zugriff auf deine Fotos.</p>
-
-  <h2>In-App-Käufe</h2>
-  <p>Den einmaligen Kauf „Premium“ wickelt Apple (App Store) oder Google (Google Play) ab. Wir sehen deine Zahlungsdaten nie. Die App erhält nur die Information, ob der Kauf aktiv ist, und speichert sie auf dem Gerät. Für die Zahlung gilt die Datenschutzerklärung von Apple bzw. Google.</p>
-
-  <h2>Kinder</h2>
-  <p>Die App richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine Daten von ihnen. Wenn du glaubst, dass ein Kind uns Daten übermittelt hat, melde dich bitte.</p>
-
-  <h2>Deine Rechte</h2>
-  <p>Wir speichern deine Daten auf keinem Server, daher können wir nichts herausgeben oder löschen. Die Daten in der App löschst du selbst. Zu Werbedaten kannst du deine Einwilligung in der App widerrufen, die Werbe-ID zurücksetzen oder die Tools von Google nutzen. Du hast außerdem das Recht, dich bei einer Datenschutzaufsichtsbehörde zu beschweren.</p>
-
-  <h2>Änderungen</h2>
-  <p>Wenn wir diese Erklärung ändern, veröffentlichen wir die neue Fassung auf dieser Seite und aktualisieren das Gültigkeitsdatum. Auf wesentliche Änderungen weisen wir in der App oder in den Update-Hinweisen hin.</p>
-
-  <h2>Kontakt</h2>
-  <p>Fragen zum Datenschutz: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
+  <p class="lead">Pakuni hat keine Konten, keinen Server und keine Analyse. Sammlung und Einstellungen liegen im Speicher deines Telefons. Das Telefon verlässt nur, was Googles Werbung (AdMob) und die Zahlungen von Apple und Google brauchen.</p>
+  <div class="cells">
+    <div class="cell"><h3><span>1</span>Bleibt auf dem Telefon</h3><p>Das Spiel speichert lokal: deine Pakuns mit Doppelten und goldenen Versionen, Briefmarken, die Uhren der Zeitpakete und das Sortierband, die Zähler der Seltenheitsgarantie, Kalender, Serie und Tagesaufgaben, deinen Postmeister-Rang, deine Straße, Einstellungen (Sprache, Ton, Vibration, reduzierte Bewegung, Schnell öffnen), den Stand der Erinnerung, Werbe- und Startzähler (für die Limits) und ob du Premium hast.</p><p>Nichts davon geht an uns oder andere. Du löschst es, indem du die App-Daten löschst oder die App deinstallierst. Du gibst uns weder Namen noch E-Mail.</p></div>
+    <div class="cell"><h3><span>2</span>Verlässt das Telefon: Werbung</h3><p>Ohne Premium zeigt das Spiel ein kleines Banner in den Tabs Straße, Album und Katalog (nie während ein Paket geöffnet wird) und Werbung mit Belohnung, die du selbst startest, mit Tageslimit. Google liefert sie über das Google Mobile Ads SDK, das beim Laden einer Anzeige an Google senden kann:</p><ul><li>Gerätekennungen: die Werbe-ID (IDFA auf iOS nur mit deiner Erlaubnis; die Android-Werbe-ID) und die App-Set-ID,</li><li>die IP-Adresse und einen daraus grob abgeleiteten Standort,</li><li>Interaktionen mit Anzeigen (Aufrufe, Tipps, App-Starts),</li><li>Diagnose- und Leistungsdaten des SDK.</li></ul><p>Google nutzt das, um Anzeigen zu zeigen und zu messen, für Analysen und gegen Betrug; die Übertragung ist verschlüsselt. Mehr: <a href="https://policies.google.com/technologies/partner-sites">wie Google Daten aus Partner-Apps nutzt</a>, <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</p></div>
+    <div class="cell"><h3><span>3</span>Deine Wahl bei Werbung</h3><p>Im EWR, im Vereinigten Königreich und in der Schweiz erscheint vor der ersten Anzeige Googles Einwilligungsformular (UMP): zustimmen, ablehnen oder Details wählen. Ohne Einwilligung ist Werbung nicht personalisiert. Ändern im Spiel: Einstellungen (der Postschalter) → Schalterdienste → Datenschutzoptionen für Werbung. Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), für nicht personalisierte Werbung und Betrugsschutz berechtigtes Interesse.</p><p>Auf dem iPhone fragt das System zusätzlich nach Tracking (ATT). Google erhält die IDFA nur mit deiner Erlaubnis, das Spiel läuft ohne sie genauso (iOS-Einstellungen → Datenschutz &amp; Sicherheit → Tracking). Auf Android setzt du die Werbe-ID in den Systemeinstellungen zurück.</p></div>
+    <div class="cell"><h3><span>4</span>Benachrichtigung</h3><p>Wenn du es erlaubst, zeigt dein Telefon höchstens eine lokale Benachrichtigung am Tag, nur wenn wirklich ein Zeitpaket wartet, und nie zwischen 21:00 und 9:00 Uhr. Das Telefon plant sie selbst: kein Push-Dienst, kein Server, kein Token. Abhaken auf dem Paketschein in den Einstellungen oder in den Systemeinstellungen ausschalten.</p></div>
+    <div class="cell"><h3><span>5</span>Postkarten</h3><p>Deine Straße kannst du als Postkarte (Bild) über das Teilen-Menü des Systems verschicken. Den Empfänger wählst du; bei uns kommt nichts an, und das Spiel fragt nie nach Zugriff auf deine Fotos.</p></div>
+    <div class="cell"><h3><span>6</span>Das Briefmarkenalbum (Premium)</h3><p>Den einmaligen Kauf „Premium“ wickelt Apple (App Store) oder Google (Google Play) ab. Zahlungsdaten sehen wir nie; das Spiel erfährt nur, ob der Kauf aktiv ist, und speichert das auf deinem Telefon. Für die Zahlung gilt die Datenschutzerklärung von Apple oder Google.</p></div>
+    <div class="cell"><h3><span>7</span>Kinder</h3><p>Pakuni richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine Daten von ihnen. Falls ein Kind uns Daten gegeben hat, schreib uns bitte.</p></div>
+    <div class="cell"><h3><span>8</span>Deine Rechte</h3><p>Wir speichern keine Daten von dir auf einem Server, also gibt es bei uns nichts herauszugeben oder zu löschen; die Spieldaten löschst du selbst. Die Werbeeinwilligung widerrufst du im Spiel, die Werbe-ID setzt du im System zurück, und für Daten bei Google helfen Googles Werkzeuge. Du kannst dich bei einer Datenschutzaufsichtsbehörde beschweren.</p></div>
+    <div class="cell"><h3><span>9</span>Änderungen und Kontakt</h3><p>Eine neue Fassung erscheint auf dieser Seite mit neuem Datum oben; wichtige Änderungen nennen wir im Spiel oder in den Update-Hinweisen. Fragen: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p></div>
+  </div>
 </section>
 
-<section id="es" lang="es">
-  <h1>Política de privacidad</h1>
-  <p class="meta">Pakuni (iOS y Android) · en vigor desde el 4 de noviembre de 2026</p>
-  <div class="box">
-    <p>En resumen: el juego funciona sin cuenta y sin internet. Tu progreso, ajustes y estadísticas se quedan en tu dispositivo. No tenemos servidor propio. Los datos necesarios para los anuncios los trata Google (AdMob), y las compras las gestionan Apple y Google.</p>
+<section class="label" id="es" lang="es">
+  <div class="airmail" aria-hidden="true"></div>
+  <header class="label-head">
+    <div>
+      <p class="kicker">Pakuni</p>
+      <h1 class="title">Privacidad en Pakuni</h1>
+      <p class="meta">iOS · Android · en vigor desde el 6 de noviembre de 2026</p>
+    </div>
+    <div class="postmark" aria-hidden="true">PAKUNI<br>06·11·2026</div>
+  </header>
+  <div class="addr">
+    <div><b>Remitente</b>JaworIT Daniel Jaworski, responsable del tratamiento · <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a></div>
+    <div><b>Destinatario</b>Tú, quien juega a Pakuni en iOS o Android</div>
   </div>
-
-  <h2>Responsable</h2>
-  <p>Pakuni lo crea JaworIT Daniel Jaworski (responsable del tratamiento). Contacto: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
-
-  <h2>Datos en tu dispositivo</h2>
-  <p>La app guarda localmente en tu dispositivo: tu colección (Pakuns, repetidas, versiones doradas), los sellos, los relojes de los paquetes con temporizador y la cinta de clasificación, los contadores de la garantía de rareza, el calendario, la racha y las tareas diarias, tu rango de Jefe de correos, la distribución de tu Calle, los ajustes (idioma, sonido, vibración, reducir movimiento), el estado del recordatorio, contadores de anuncios (para respetar los límites), un contador de inicios (para no sugerir nuestros otros juegos en tu primera sesión) y si has comprado Premium. Estos datos no se envían ni a nosotros ni a nadie. Los borras eliminando los datos de la app o desinstalándola.</p>
-  <p>No creas ninguna cuenta ni nos das tu nombre o correo electrónico. La app no usa herramientas de analítica ni de informes de fallos.</p>
-
-  <h2>Anuncios (Google AdMob)</h2>
-  <p>La versión gratuita muestra un banner en la Calle, el Álbum y el Catálogo (nunca mientras abres un paquete) y anuncios con recompensa que inicias tú, con un límite diario. Los paquetes de anuncios contienen una figura aleatoria de la ciudad elegida; ves las probabilidades antes de verlo. Los anuncios los proporciona Google mediante el Google Mobile Ads SDK. Al cargar un anuncio, el SDK puede recopilar y enviar a Google:</p>
-  <ul>
-    <li>identificadores del dispositivo, como el identificador de publicidad (IDFA en iOS, solo con tu permiso; ID de publicidad de Android) y el ID del conjunto de apps,</li>
-    <li>la dirección IP y la ubicación aproximada derivada de ella,</li>
-    <li>información sobre interacciones con anuncios (por ejemplo, visualizaciones, toques, aperturas de la app),</li>
-    <li>datos de diagnóstico y rendimiento (por ejemplo, tiempo de inicio, fallos del SDK).</li>
-  </ul>
-  <p>Google usa estos datos para mostrar y medir anuncios, para analítica y para prevenir el fraude. Los datos se cifran durante la transmisión. Más información: <a href="https://policies.google.com/technologies/partner-sites">Cómo utiliza Google la información de sitios web o aplicaciones que utilizan sus servicios</a> y la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</p>
-
-  <h2>Consentimiento para anuncios (RGPD)</h2>
-  <p>En el Espacio Económico Europeo, el Reino Unido y Suiza, la app muestra el formulario de consentimiento de Google (UMP) antes del primer anuncio. Puedes aceptar anuncios personalizados, rechazarlos o elegir opciones detalladas. Sin consentimiento, los anuncios no se personalizan. Puedes cambiar tu elección en cualquier momento en Ajustes → «Privacidad de anuncios». La base jurídica es tu consentimiento (art. 6.1.a del RGPD) o, para anuncios no personalizados y prevención del fraude, el interés legítimo.</p>
-
-  <h2>Seguimiento en iOS (ATT)</h2>
-  <p>En iPhone y iPad, el sistema te pregunta si la app puede rastrear tu actividad. Google solo recibe el identificador de publicidad IDFA si lo permites. El juego funciona igual sin este permiso. Puedes cambiarlo en Ajustes de iOS → Privacidad y seguridad → Rastreo. En Android puedes restablecer o eliminar el ID de publicidad en los ajustes del sistema.</p>
-
-  <h2>Notificaciones</h2>
-  <p>Si lo permites, el juego envía como mucho una notificación local al día, solo cuando un paquete con temporizador está listo de verdad, y nunca entre las 21:00 y las 9:00. La programa tu teléfono. No usamos ningún servicio push ni servidor y no creamos ningún token de notificaciones. Puedes desactivarla en el juego o en los ajustes del sistema.</p>
-
-  <h2>Enlaces a nuestros otros juegos</h2>
-  <p>En Ajustes, la app muestra otros juegos de JaworIT, marcados «De JaworIT». No es publicidad de terceros: la lista viene dentro de la app, no se descarga nada para ella y no registramos si la ves o la tocas. Al tocarla se abre la página del juego en App Store o Google Play, donde se aplica la política de privacidad de Apple o de Google.</p>
-
-  <h2>Compartir</h2>
-  <p>Puedes enviar tu Calle como postal (una imagen). Para ello se usa el menú de compartir del sistema: tú eliges adónde va. No nos llega nada y la app no pide acceso a tus fotos.</p>
-
-  <h2>Compras dentro de la app</h2>
-  <p>La compra única «Premium» la procesa Apple (App Store) o Google (Google Play). Nunca vemos tus datos de pago. La app solo recibe si la compra está activa y lo guarda en tu dispositivo. Al pago se aplica la política de privacidad de Apple o de Google.</p>
-
-  <h2>Menores</h2>
-  <p>La app no está dirigida a menores de 13 años y no recopila sus datos de forma consciente. Si crees que un menor nos ha facilitado datos, escríbenos.</p>
-
-  <h2>Tus derechos</h2>
-  <p>No guardamos tus datos en ningún servidor, así que no tenemos nada que entregar ni borrar. Los datos de la app los borras tú. Sobre los datos publicitarios, puedes retirar el consentimiento en la app, restablecer tu ID de publicidad o usar las herramientas de Google. También tienes derecho a presentar una reclamación ante una autoridad de protección de datos.</p>
-
-  <h2>Cambios</h2>
-  <p>Si cambiamos esta política, publicaremos la nueva versión en esta página y actualizaremos la fecha de entrada en vigor. Avisaremos de los cambios importantes en la app o en las notas de la actualización.</p>
-
-  <h2>Contacto</h2>
-  <p>Preguntas sobre privacidad: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
+  <p class="lead">Pakuni no tiene cuentas, ni servidor, ni analítica. Tu colección y tus ajustes viven en la memoria del teléfono. Del teléfono solo sale lo que necesitan los anuncios de Google (AdMob) y los pagos de Apple y Google.</p>
+  <div class="cells">
+    <div class="cell"><h3><span>1</span>Se queda en tu teléfono</h3><p>El juego guarda localmente: tus Pakuns con repetidas y versiones doradas, los Sellos, los relojes de los paquetes con temporizador y la cinta de clasificación, los contadores de la garantía de rareza, el calendario, la racha y las tareas del día, tu rango de Jefe de Correos, tu Calle, los ajustes (idioma, sonido, vibración, movimiento reducido, apertura rápida), el estado del recordatorio, contadores de anuncios y de inicios (para los límites) y si tienes Premium.</p><p>Nada de esto nos llega a nosotros ni a nadie. Se borra al eliminar los datos de la app o desinstalarla. Nunca nos das tu nombre ni tu correo.</p></div>
+    <div class="cell"><h3><span>2</span>Sale de tu teléfono: anuncios</h3><p>Sin Premium, el juego muestra un pequeño banner en las pestañas Calle, Álbum y Catálogo (nunca mientras abres un paquete) y anuncios con recompensa que inicias tú, con un límite diario. Los sirve Google mediante el Google Mobile Ads SDK, que al cargar un anuncio puede enviar a Google:</p><ul><li>identificadores del dispositivo: el identificador de publicidad (IDFA en iOS solo con tu permiso; el ID de publicidad de Android) y el ID de conjunto de apps,</li><li>tu dirección IP y una ubicación aproximada deducida de ella,</li><li>interacciones con anuncios (impresiones, toques, inicios de la app),</li><li>datos de diagnóstico y rendimiento del SDK.</li></ul><p>Google los usa para mostrar y medir anuncios, para analítica y contra el fraude; viajan cifrados. Más: <a href="https://policies.google.com/technologies/partner-sites">cómo usa Google los datos de las apps asociadas</a>, <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</p></div>
+    <div class="cell"><h3><span>3</span>Tú decides sobre los anuncios</h3><p>En el EEE, el Reino Unido y Suiza aparece el formulario de consentimiento de Google (UMP) antes del primer anuncio: aceptar, rechazar o elegir opciones detalladas. Sin consentimiento, los anuncios no se personalizan. Cámbialo en el juego: Ajustes (la ventanilla de correos) → Servicios de ventanilla → Opciones de privacidad de anuncios. Base legal: consentimiento (art. 6.1.a RGPD) o interés legítimo para anuncios no personalizados y prevención del fraude.</p><p>En el iPhone el sistema también pregunta por el seguimiento (ATT). Google recibe el IDFA solo si lo permites, y el juego funciona igual si no (Ajustes de iOS → Privacidad y seguridad → Rastreo). En Android puedes restablecer el ID de publicidad en los ajustes del sistema.</p></div>
+    <div class="cell"><h3><span>4</span>Avisos</h3><p>Si lo permites, tu teléfono muestra como mucho una notificación local al día, solo cuando de verdad espera un paquete con temporizador, y nunca entre las 21:00 y las 9:00. La programa el propio teléfono: sin servicio push, sin servidor y sin token. Desmárcala en el resguardo de Ajustes o desactívala en el sistema.</p></div>
+    <div class="cell"><h3><span>5</span>Postales</h3><p>Puedes enviar tu Calle como postal (una imagen) con el menú de compartir del sistema. Tú eliges el destinatario; a nosotros no nos llega nada y el juego nunca pide acceso a tus fotos.</p></div>
+    <div class="cell"><h3><span>6</span>El álbum de sellos (Premium)</h3><p>La compra única «Premium» la gestiona Apple (App Store) o Google (Google Play). Nunca vemos tus datos de pago; el juego solo sabe si la compra está activa y lo guarda en tu teléfono. Al pago se aplica la política de privacidad de Apple o de Google.</p></div>
+    <div class="cell"><h3><span>7</span>Menores</h3><p>Pakuni no está dirigido a menores de 13 años y no recoge sus datos a sabiendas. Si un menor nos ha dado datos, escríbenos.</p></div>
+    <div class="cell"><h3><span>8</span>Tus derechos</h3><p>No guardamos tus datos en ningún servidor, así que no tenemos nada que entregar ni borrar; los datos del juego los borras tú. Retira el consentimiento de anuncios en el juego, restablece el ID de publicidad en el sistema y usa las herramientas de Google para los datos que tiene Google. Puedes reclamar ante una autoridad de protección de datos.</p></div>
+    <div class="cell"><h3><span>9</span>Cambios y contacto</h3><p>Una versión nueva de esta página se publicará aquí con nueva fecha arriba; avisaremos de los cambios importantes en el juego o en las notas de la actualización. Preguntas: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p></div>
+  </div>
 </section>
 
-<section id="odds" lang="en">
-  <h1>Szanse · Odds · Chancen · Probabilidades</h1>
-  <p class="meta">Pakuni · base odds per parcel, series 1 · 4 November 2026</p>
-  <div class="box">
-    <p lang="pl">Paczek, Znaczków ani niczego losowego nie da się kupić. Wybierasz miasto, losowa jest tylko figurka. Dokładne szanse dla konkretnej paczki, w tej chwili, pokazuje w grze ikona „i”.</p>
-    <p>Parcels, stamps and random items are never sold. You choose the city; only the figure is random. The exact odds for a given parcel, right now, are shown in the game behind "i".</p>
-    <p lang="de">Pakete, Briefmarken und Zufälliges kann man nicht kaufen. Du wählst die Stadt, zufällig ist nur die Figur. Die genauen Chancen für ein Paket, jetzt gerade, zeigt das Spiel unter „i“.</p>
-    <p lang="es">Los paquetes, los sellos y lo aleatorio no se venden. Tú eliges la ciudad; solo la figura es aleatoria. Las probabilidades exactas de cada paquete, en ese momento, se ven en el juego bajo «i».</p>
+<section class="label" id="odds" lang="en">
+  <div class="airmail" aria-hidden="true"></div>
+  <header class="label-head">
+    <div>
+      <p class="kicker">Tariff board</p>
+      <h2 class="title">Szanse · Odds · Chancen · Probabilidades</h2>
+      <p class="meta">Pakuni · base odds per parcel, series 1 · updated 6 November 2026</p>
+    </div>
+  </header>
+  <div class="cells one">
+    <div class="cell">
+      <p lang="pl">Paczek ani niczego losowego nie da się kupić. Za Znaczki kupisz tylko wskazane figurki po stałej cenie. Miasto i rodzaj paczki wybierasz sam, losowa jest tylko figurka. Dokładne szanse dla konkretnej paczki, w tej chwili, gra pokazuje przed otwarciem.</p>
+      <p>Parcels and random items are never sold. Stamps only buy named figures at fixed prices. You choose the city and the kind of parcel; only the figure is random. The exact odds for a given parcel, right now, are shown in the game before you open it.</p>
+      <p lang="de">Pakete und Zufälliges kann man nicht kaufen. Briefmarken kaufen nur benannte Figuren zum festen Preis. Stadt und Paketart wählst du, zufällig ist nur die Figur. Die genauen Chancen für ein Paket, jetzt gerade, zeigt das Spiel vor dem Öffnen.</p>
+      <p lang="es">Los paquetes y lo aleatorio no se venden. Los Sellos solo compran figuras concretas a precio fijo. Tú eliges la ciudad y el tipo de paquete; solo la figura es aleatoria. Las probabilidades exactas de cada paquete, en ese momento, se ven en el juego antes de abrirlo.</p>
+    </div>
+    <div class="cell">
+      <table>
+        <thead><tr><th>Rarity</th><th>Standard parcel</th><th>Priority parcel (ad or calendar day 7)</th></tr></thead>
+        <tbody>
+          <tr><td>Common (3 per city)</td><td>60%</td><td>40%</td></tr>
+          <tr><td>Uncommon (2 per city)</td><td>27%</td><td>33%</td></tr>
+          <tr><td>Rare (2 per city)</td><td>10%</td><td>20%</td></tr>
+          <tr><td>Epic (1 per city)</td><td>3%</td><td>6%</td></tr>
+          <tr><td>Legendary (1 per series)</td><td>0%</td><td>1% after completing 2 cities</td></tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>Every table adds up to exactly 100%. Until you complete 2 cities a Priority parcel has no Legendary, so its odds are scaled to 100%: Common 40.4%, Uncommon 33.3%, Rare 20.2%, Epic 6.1%.</li>
+        <li>Guarantee: Rare or better at least every 10 parcels; Epic or better at least every 25.</li>
+        <li>Within a rarity, figures you are missing count twice, except the last missing one of that rarity.</li>
+        <li>Welcome parcels 1 to 4 have fixed contents.</li>
+        <li>The kind of parcel (cardboard box, wooden crate, gift box, mailing tube, padded envelope, tin, frozen parcel) only changes how it opens, never the odds.</li>
+        <li>Rare surprises, free and never sold: a parcel in the parcel 4%; a sender letter with a sticker 6%; a second figurine 5% once you hold 10 or more duplicates. The second figurine is drawn with the same odds as the first.</li>
+        <li>Every figure can also be bought by name in the Post Catalogue for Stamps: Common 80, Uncommon 160, Rare 400, Epic 1000, Legendary 2000 (after completing 2 cities).</li>
+      </ul>
+    </div>
   </div>
-  <table>
-    <thead><tr><th>Rarity</th><th>Standard parcel</th><th>Priority parcel (ad or calendar day 7)</th></tr></thead>
-    <tbody>
-      <tr><td>Common (3 per city)</td><td>60%</td><td>40%</td></tr>
-      <tr><td>Uncommon (2 per city)</td><td>27%</td><td>33%</td></tr>
-      <tr><td>Rare (2 per city)</td><td>10%</td><td>20%</td></tr>
-      <tr><td>Epic (1 per city)</td><td>3%</td><td>6%</td></tr>
-      <tr><td>Legendary (1 per series)</td><td>0%</td><td>1% after completing 2 cities</td></tr>
-    </tbody>
-  </table>
-  <ul>
-    <li>Every table adds up to exactly 100%. Until you complete 2 cities a Priority parcel has no Legendary, so its odds are scaled to 100%: Common 40.4%, Uncommon 33.3%, Rare 20.2%, Epic 6.1%.</li>
-    <li>Guarantee: Rare or better at least every 10 parcels; Epic or better at least every 25.</li>
-    <li>Within a rarity, figures you are missing count twice, except the last missing one of that rarity.</li>
-    <li>Welcome parcels 1 to 4 have fixed contents and are labelled so.</li>
-    <li>The kind of parcel (cardboard box, wooden crate, gift box, mailing tube, padded envelope, tin, frozen parcel) only changes how it opens, never the odds.</li>
-    <li>Rare surprises, free and never sold: a parcel in the parcel 4%; a sender letter with a sticker 6%; a second figurine 5% once you hold 10 or more duplicates. The second figurine is drawn with the same odds as the first.</li>
-    <li>Every figure can also be bought by name in the Post Catalogue for stamps earned in the game: Common 80, Uncommon 160, Rare 400, Epic 1000, Legendary 2000 (after completing 2 cities).</li>
-  </ul>
 </section>
 
 </main>
-<footer>Pakuni · com.jaworit.pakuni</footer>
+<footer>Pakuni · com.jaworit.pakuni · JaworIT</footer>
 </body>
 </html>
